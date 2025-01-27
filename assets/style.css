@@ -215,6 +215,7 @@ main {
     
       line-height: 2rem;
       font-size: 14px;
+      margin-bottom: 2rem;
 
       img
       {
@@ -227,13 +228,60 @@ main {
     }
   }
 
-
 }
 
 /* end MAIN */
 
 /* FOOTER */
 
+footer
+{
+  background-color: var(--gz-secondary-light);
+  font-size: 14px;
+  flex-direction: column;
+  align-items: center;
+
+  .copyright
+  {
+    color: var(--gz-second-bg);
+    text-align: center;
+    padding: 1.5rem 0 0.5rem 0;
+    font-weight: 900;
+  }
+
+  .indirizzo
+  {
+    color: var(--gz-second-bg);
+    text-align: center;
+  }
+
+  .nav-secondary
+  {
+    background-color: var(--gz-secondary-light);
+    justify-content: center;
+
+
+    ul
+    {
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding:  1.5rem 2.5rem;
+      list-style: none;
+
+      li
+      {
+        margin-bottom: 1rem;
+      }
+      
+
+    }
+    a
+    {
+      color: var(--gz-second-bg);
+    }
+  }
+  
+}
 /* end FOOTER */
 
 /* RESPONSIVE */
@@ -317,6 +365,23 @@ main {
   }
 }
 
+footer
+{
+  .nav-secondary
+  {
+
+    ul
+    {
+      padding: none;
+      
+      li 
+      {
+        padding: 0 1rem;
+      }
+    }
+  
+}
+}
 
 /* DEKSTOP RESPONSIVE */
 @media screen and (min-width:992px) {
@@ -375,4 +440,30 @@ main {
       }
     }
   }
-}
+
+  footer
+  {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1rem;
+
+    .copyright
+    {
+      text-align:unset;
+      padding-left: 0rem;
+    }
+
+    .indirizzo
+    {
+      text-align:unset;
+      padding-left: 0rem;
+    }
+
+    ul
+    {
+      padding: 0 !important;
+    }
+
+    }
+  }
