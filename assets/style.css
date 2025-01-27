@@ -30,15 +30,15 @@ margin: 0;
 
 .container
 {
-    width: 100%;
-    padding: 0 1rem;
+  width: 100%;
+  padding: 0 1rem;
 }
 
 .row
 {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 2rem -1rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem -1rem;
 }
 
 [class^="col"]
@@ -109,6 +109,22 @@ margin: 0;
 /* end LAYOUT */
 
 /* HEADER */
+nav
+{
+  justify-content: center;
+
+  .logo
+  {
+    text-decoration: none;
+    font-family: "Nerko One", serif;
+    font-size: 60px;
+    text-shadow: 2px 2px #aeaeae;
+    color: #F7972E;
+    text-align: center;
+    padding: 1rem 0;
+  }
+}
+
 
 /* end HEADER */
 
@@ -119,3 +135,19 @@ margin: 0;
 /* FOOTER */
 
 /* end FOOTER */
+
+/* RESPONSIVE */
+
+@media screen and (min-width:768px) 
+{
+
+nav
+{
+  justify-content: flex-start;
+  .logo
+  {
+    padding: 1rem 2rem;
+  }
+}
+
+}
